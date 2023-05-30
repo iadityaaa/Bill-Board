@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  padding:10px;
+  height: 98vh;
+  background-image: url("Components/IMG/giphy.gif");
+}
+
+h1{
+  margin-top: 10px;
+  font-size:50px;
+  color: #f2f2f2;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 30px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.different_dashboards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Additional Styling */
+
+.Dashboard {
+  width: 60%;
+  height: 90%;
+  margin: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Dashboard h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.Dashboard button {
+  font-size: 30px;
+  background-color: #25d366;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.stock-price-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #333;
+  position: relative;
+}
+
+.stock-price-container img:hover {
+  width: 20.5rem;
+  height: 4.8rem;
+}
+
+.stock-symbol {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.stock-price {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.stock-price-container:nth-child(even) {
+  background-color: #eaeaea;
+}
+
+.stock-price-container:hover {
+  background-color: #dcdcdc;
+}
+
+.stock-price-container:first-child {
+  margin-top: 0;
+}
+
+.stock-price-container:last-child {
+  margin-bottom: 0;
+}
+
+/* Added */
+.stock-price-container .whatsapp-image {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1040px) {
+  .stock-symbol {
+    font-weight: bold;
+    margin-right: auto;
+    font-size: 10px;
+  }
+  
+  .stock-price {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 10px;
+  }
+  h1{
+    font-size: 18px;
+    color: #333;
+  }
+  .different_dashboards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Dashboard button {
+    font-size: 15px;
+    background-color: #25d366;
+    color: #f4f0f0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .container {
+    background-image: none;
+    color: #dcdcdc;
+  }
+  
+}

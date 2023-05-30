@@ -1,0 +1,85 @@
+/* FrontPage.css */
+
+.front-page-container {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 97vh;
+  background-color: #f9f9f9;
+  padding: 10px;
+  text-align: center;
+  background-size: cover;
+}
+
+.front-page-container h2.front-page-title{
+  margin-top: 0px;
+  font-size: 100px;
+  background-color: #f9f9f9f0;
+  border-radius: 20px;
+  color: #562b2b;
+  margin-bottom: 10px;
+}
+
+.front-page-container p.front-page-content {
+  background-color: #f9f9f9f0;
+  border-radius: 20px;
+  color: #562b2b;
+  font-size: 30px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.front-page-container button.front-page-button {
+  font-size: 24px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.front-page-container .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-size: 20px;
+  color: #888;
+}
+/* For mobile devices */
+@media screen and (max-width: 760px) {
+
+  .front-page-container h2.front-page-title{
+    margin-top: 0px;
+    font-size: 80px;
+    background-color: #f9f9f9f0;
+    border-radius: 20px;
+    color: #562b2b;
+    margin-bottom: 10px;
+  }
+
+  .front-page-container p.front-page-content {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .front-page-container button.front-page-button {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+
+  .front-page-container h2.front-page-title{
+    font-size: 50px;
+  }
+}
+
+
